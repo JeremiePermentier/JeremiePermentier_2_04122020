@@ -4,50 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Réservia</title>
 </head>
 <body>
     <header class="header">
         <img class="header__icon" src="img/logo/Reservia.svg" alt="Reservia">
+        <nav class="nav">
+            <a class="nav__link" href="#accommodation">Hébergements</a>
+            <a class="nav__link" href="#activities">Activités</a>
+            <a class="nav__link" href="#">S'inscrire</a>
+        </nav>
     </header>
-    <nav class="nav">
-        <a class="nav__link" href="#accommodation">Hébergements</a>
-        <a class="nav__link" href="#activities">Activités</a>
-        <a class="nav__link" href="#">S'inscrire</a>
-    </nav>
     <main>
         <section class="search">
             <h1 class="search__heading">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="search__subheading">En plein centre ville ou en pleine nature</p>
-            <form class="form" method="get" action="search.php">
-                <i class="fas fa-map-marker-alt form__icon"></i>
-                <input class="form__inupt form__input--search" type="search" name="city" id="city">
-                <input class="form__input form__input--btn" type="button" value="Rechercher">
+            <form method="get" action="search.php">
+                <div class="form">
+                    <i class="fas fa-lg fa-map-marker-alt form__icon"></i>
+                    <input class="form__input form__input--search" type="search" name="city" id="city" placeholder="Marseille, France">
+                    <input class="form__input form__input--btn" type="button" value="Rechercher">   
+                </div>
                 <div class="form__filters">
                     <p class="form__filters--text">Filtres</p>
                     <div class="form__filters--btn">
-                        <i class="fas fa-money-bill-wave form__filters--icon"></i>
                         <input type="checkbox" name="economy" id="economy" class="form__filters--checkbox">
-                        <label for="economy" class="form__filters--label">Économy</label>
+                        <label for="economy" class="form__filters--label">
+                            <i class="fas fa-sm fa-money-bill-wave form__filters--icon"></i>
+                            Économie
+                    </label>
                     </div>
                     <div class="form__filters--btn">
-                        <i class="fas fa-child"></i>
                         <input type="checkbox" name="familial" id="familial" class="form__filters--checkbox">
-                        <label for="familial" class="form__filters--label">Familial</label>
+                        <label for="familial" class="form__filters--label">
+                            <i class="fas fa-sm fa-child form__filters--icon"></i>
+                            Familial
+                        </label>
                     </div>
                     <div class="form__filters--btn"> 
-                        <i class="fas fa-heart"></i>
                         <input type="checkbox" name="romantique" id="romantique" class="form__filters--checkbox">
-                        <label for="romantique" class="form__filters--label">Romantique</label>
+                        <label for="romantique" class="form__filters--label">
+                            <i class="fas fa-sm fa-heart form__filters--icon"></i>
+                            Romantique
+                        </label>
                     </div>
                     <div class="form__filters--btn">
-                        <i class="fas fa-dog"></i>
                         <input type="checkbox" name="animals" id="animals" class="form__filters--checkbox">
-                        <label for="animals" class="form__filters--label">Animaux autorisés</label>
+                        <label for="animals" class="form__filters--label">
+                            <i class="fas fa-sm fa-dog form__filters--icon"></i>
+                            Animaux autorisés
+                        </label>
                     </div>
                 </div>
             </form>
-            <p class="form__info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p class="form__info"><i class="fas fa-sm fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
         <section id="accommodation" class="accommodation">
             <h2 class="accommodation__heading">Hébergements à Marseille</h2>

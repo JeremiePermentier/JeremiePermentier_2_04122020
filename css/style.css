@@ -1,0 +1,135 @@
+/**
+* CONTENTS
+*
+* SETTINGS
+* Global................Variables and fonts.
+*
+* BASE
+* Headings..............H1 - H6 Styles.
+*
+* OBJECTS
+* Wrappers..............Wrapping and constraining elements.
+* 
+* COMPONENTS
+* Page-head.............The main page header.
+* Page-foot.............The main page footer.
+* Buttons...............Button elements.
+*/
+
+/*------------------------------------*\
+  #Global
+\*------------------------------------*/
+
+
+/*---color---*/
+
+:root {
+    --colorPrimary: #0065fc;
+    --colorSecondary: #DEEBFF;
+    --backColor: #F2F2F2;
+    --textColor: #1D1C1C;
+    --secondColorText: #fff;
+  }
+
+/* fonts */
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*------------------------------------*\
+  #BASE
+\*------------------------------------*/
+
+/*---Page-Head---*/
+
+
+
+/*------------------------------------*\
+  #OBJECTS
+\*------------------------------------*/
+
+/*---Wrappers---*/
+
+/* Page-Head */
+.form, .form__filters, .header{
+    display: flex;
+}
+body{
+    padding: 0 2rem 2rem 2rem;
+}
+.header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 3rem 0;
+}
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+
+/*---Page-Head---*/
+
+.nav__link{
+    color: var(--textColor);
+    padding: 0.75rem 1.25rem;
+}
+    .nav__link:nth-child(3n){
+        color: var(--colorPrimary);
+        font-weight: bold;
+    }
+        .nav__link:active, .nav__link:hover{
+            color: var(--colorPrimary);
+            font-weight: bold;
+            border-top: 1rem solid var(--colorPrimary);
+        }
+
+
+/* Form search */
+
+.form__icon{
+    background-color: var(--colorSecondary);
+    padding: 1rem;
+    border: 1px solid var(--colorSecondary);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.form__input{
+    border: 1px solid var(--colorSecondary);
+    padding: 1rem;
+}
+.form__input--btn{
+    background-color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+    border-radius: 0 0.5rem 0.5rem 0;
+    color: var(--secondColorText);
+    font-weight: bold;
+}
+
+/* Form Favory */
+.form__filters {
+    align-items: center;
+}
+    .form__filters--text{
+        font-weight: bold;
+    }
+    .form__filters--checkbox{
+        display: none;
+    }
+    .form__filters--icon {
+        color: var(--colorPrimary);
+        background-color: var(--colorSecondary);
+        padding: 1rem;
+        border-radius: 100%;
+        position: relative;
+        right: 0.5vh;
+    }
+        .form__filters--label {
+            border: 1px solid var(--textColor);
+            border-radius: 1.5rem;
+            padding: 0.75rem 0.5rem 0.75rem 0rem;
+        }
+
+.form__info > i{
+    color: var(--colorPrimary);
+    padding: 0.5rem 0.75rem;
+    border: 0.15rem solid var(--textColor);
+    border-radius: 100%;
+}
