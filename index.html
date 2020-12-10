@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" media="screen and (max-width: 414px)" href="css/smallscreen.css">
-    <link rel="stylesheet" media="screen and (min-width: 415px) and (max-width: 1000px)" href="css/tablet.css">
-    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 415px) and (max-width: 1260px)" href="css/tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 1261px)" href="css/style.css">
     <title>Réservia</title>
 </head>
 <body>
@@ -172,7 +172,8 @@
             </div>
             <aside class="popular">
                 <h2 class="popular__heading">Les plus populaires <i class="fas fa-chart-line"></i></h2>
-                <a class="popular__card" href="#">
+                <div class="popular__container">
+                    <a class="popular__card" href="#">
                     <figure>
                         <img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
                         alt="Hôtel Le soleil du matin">
@@ -186,48 +187,51 @@
                             <i class="fas fa-star popular__card--color"></i>
                         </figcaption>
                     </figure>
-                </a>
-                <a class="popular__card" href="#">
-                    <figure>
-                        <img src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" 
-                        alt="Au coeur de l'eau Chambres d'hôtes">
-                        <figcaption>
-                            <h3 class="popular__card--heading">Au coeur de l'eau<br/> Chambres d'hôtes</h3>
-                            <p class="popular__card--text">Nuit à partir de 71 €</p>
-                            <i class="fas fa-star popular__card--color"></i>
-                            <i class="fas fa-star popular__card--color"></i>
-                            <i class="fas fa-star popular__card--color"></i>
-                            <i class="fas fa-star popular__card--color"></i>
-                            <i class="fas fa-star"></i>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a class="popular__card" href="#">
-                    <figure>
-                        <img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
-                        alt="Hôtel tout bleu tout Blanc">
-                        <figcaption>
-                            <h3 class="popular__card--heading">Hôtel tout bleu tout <br/>Blanc</h3>
-                            <p class="popular__card--text">Nuit à partir de 68 €</p>
-                            <i class="fas fa-star popular__card--color"></i>
-                            <i class="fas fa-star popular__card--color"></i>
-                            <i class="fas fa-star popular__card--color"></i>
-                            <i class="fas fa-star popular__card--color"></i>
-                            <i class="fas fa-star"></i>
-                        </figcaption>
-                    </figure>
-                </a>
+                    </a>
+                    <a class="popular__card" href="#">
+                        <figure>
+                            <img src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" 
+                            alt="Au coeur de l'eau Chambres d'hôtes">
+                            <figcaption>
+                                <h3 class="popular__card--heading">Au coeur de l'eau<br/> Chambres d'hôtes</h3>
+                                <p class="popular__card--text">Nuit à partir de 71 €</p>
+                                <i class="fas fa-star popular__card--color"></i>
+                                <i class="fas fa-star popular__card--color"></i>
+                                <i class="fas fa-star popular__card--color"></i>
+                                <i class="fas fa-star popular__card--color"></i>
+                                <i class="fas fa-star"></i>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a class="popular__card" href="#">
+                        <figure>
+                            <img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+                            alt="Hôtel tout bleu tout Blanc">
+                            <figcaption>
+                                <h3 class="popular__card--heading">Hôtel tout bleu tout <br/>Blanc</h3>
+                                <p class="popular__card--text">Nuit à partir de 68 €</p>
+                                <i class="fas fa-star popular__card--color"></i>
+                                <i class="fas fa-star popular__card--color"></i>
+                                <i class="fas fa-star popular__card--color"></i>
+                                <i class="fas fa-star popular__card--color"></i>
+                                <i class="fas fa-star"></i>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
             </aside>
         </section>
         <section id="activities" class="activities">
             <h2 class="activities__heading">Activités à Marseille</h2>
             <div class="activities__grid">
-                <a class="activities__card card-one" href="#">
-                    <figure>
-                        <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                        <figcaption class="activities__card--text">VieuxPort</figcaption>
-                    </figure>
-                </a>
+                <div>
+                    <a class="activities__card card-one" href="#">
+                        <figure>
+                            <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                            <figcaption class="activities__card--text">VieuxPort</figcaption>
+                        </figure>
+                    </a>
+                </div>
                 <div class="activities__container">
                     <a class="activities__card card-two" href="#">
                         <figure>
@@ -242,12 +246,14 @@
                         </figure>
                     </a>
                 </div>
-                <a class="activities__card card-four" href="#">
-                    <figure>
-                        <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                        <figcaption class="activities__card--text">Parc National des Calanques</figcaption>
-                    </figure>
-                </a>
+                <div>
+                    <a class="activities__card card-four" href="#">
+                        <figure>
+                            <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                            <figcaption class="activities__card--text">Parc National des Calanques</figcaption>
+                        </figure>
+                    </a>
+                </div>
                 <div class="activities__container">
                     <a class="activities__card card-five" href="#">
                         <figure>

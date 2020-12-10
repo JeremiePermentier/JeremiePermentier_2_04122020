@@ -27,7 +27,7 @@
     --colorPrimary: #0065fc;
     --colorSecondary: #DEEBFF;
     --backColor: #F2F2F2;
-    --textColor: #1D1C1C;
+    --colorThree: #1D1C1C;
     --secondColorText: #fff;
   }
 
@@ -87,7 +87,7 @@ header{
 /*---Page-Head---*/
 
 .nav__link{
-    color: var(--textColor);
+    color: var(--colorThree);
     padding: 0.75rem 1.25rem;
 }
     .nav__link:nth-child(3n){
@@ -218,12 +218,12 @@ header{
     }
     .accommodation__card{
         display: block;
-        width: 19rem;
+        width: 18rem;
         padding: 0.5rem;
         margin: 1rem;
         border-radius: 1rem;
         background-color: var(--secondColorText);
-        box-shadow: 6px 6px 10px var(--textColor);
+        box-shadow: 6px 6px 10px var(--colorThree);
     }
         .accommodation__card--figure > img{
             width: 100%;
@@ -233,7 +233,7 @@ header{
         }
         figcaption{
             line-height: 1.5rem;
-            color: var(--textColor);
+            color: var(--colorThree);
         }
         figcaption > i{
             color: var(--backColor);
@@ -242,7 +242,7 @@ header{
             color: var(--colorPrimary);
         }
     .accommodation__link{
-        color: var(--textColor);
+        color: var(--colorThree);
         font-weight: bold;
     }
 /* POPULAR */
@@ -260,7 +260,7 @@ header{
         margin: 1rem;
         border-radius: 1rem;
         background-color: var(--secondColorText);
-        box-shadow: 6px 6px 10px var(--textColor);
+        box-shadow: 6px 6px 10px var(--colorThree);
     }
     .popular__card{
         display: flex;
@@ -286,14 +286,14 @@ header{
     padding: 1.75rem 0;
 }
 .activities__grid{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
 }
 .activities__card{
-    box-shadow: 6px 6px 10px var(--textColor);
+    box-shadow: 6px 6px 10px var(--colorThree);
     display: block;
     border-radius: 1rem;
-    width: 40vh;
     
 }
 .activities__card > figure{
@@ -341,7 +341,7 @@ footer > ul{
     padding: 0 8rem 0 0;
 }
 .footer__list--link{
-    color: var(--textColor);
+    color: var(--colorThree);
     line-height: 1.5rem;
 }
 .footer__list--heading{
