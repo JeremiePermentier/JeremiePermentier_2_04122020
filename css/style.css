@@ -118,8 +118,6 @@ header{
         border-radius: 0.5rem 0 0 0.5rem;
     }
     .form__input{
-        /*-moz-border-radius: 1px solid var(--backColor);
-        -webkit-border-radius: 1px solid var(--backColor);*/
         border: 1px solid var(--backColor);
         padding: 1rem;
     }
