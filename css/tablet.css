@@ -4,16 +4,11 @@
 * SETTINGS
 * Global................Variables and fonts.
 *
-* BASE
-* Headings..............H1 - H6 Styles.
+* Header
+* Nav
+* MAIN
+***
 *
-* OBJECTS
-* Wrappers..............Wrapping and constraining elements.
-* 
-* COMPONENTS
-* Page-head.............The main page header.
-* Page-foot.............The main page footer.
-* Buttons...............Button elements.
 */
 
 /*------------------------------------*\
@@ -27,84 +22,80 @@
     --colorPrimary: #0065fc;
     --colorSecondary: #DEEBFF;
     --backColor: #F2F2F2;
-    --textColor: #1D1C1C;
-    --secondColorText: #fff;
+    --threeColor: #1D1C1C;
+    --fourColor: #fff;
+    --shadow: #1D1C1C30;
   }
-
-/* fonts */
+/*---Fonts---*/
 body{
     font-family: 'Raleway', sans-serif;
 }
-
 /*------------------------------------*\
-  #BASE
+  #Flex-box
 \*------------------------------------*/
-
-/*---Page-Head---*/
-
-
-
-/*------------------------------------*\
-  #OBJECTS
-\*------------------------------------*/
-
-/*---Wrappers---*/
-
-.form, .form__filters, header, .accommodation__grid, footer{
+.form, .form__filters, header, .accommodation__grid, footer, .laytout{
     display: flex;
 }
-.form__filters, header, footer{
+.form__filters, header, footer, .accommodation__grid{
     flex-wrap: wrap;
-}
-/*header, section, ul{
-    margin: 0 4rem 3rem 4rem;
-}*/
-header{
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0 3rem 0;
-}
-.accommodation__grid{
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .layout{
-    display: flex;
     flex-direction: column-reverse;
 }
-.accommodation{
-    grid-column: 1/3;
+.accommodation__grid{
+    justify-content: center;
 }
 .footer{
     justify-content: flex-start;
 }
 /*------------------------------------*\
-  #COMPONENTS
+  #Margin and padding
 \*------------------------------------*/
 
-/*---Page-Head---*/
+/*---margin---*/
+section, ul, header{
+    margin: 0 1rem 3rem 1rem;
+}
 
+/*------------------------------------*\
+  #Header
+\*------------------------------------*/
+
+header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 3rem 0;
+}
+/*------------------------------------*\
+  #Nav
+\*------------------------------------*/
 .nav__link{
-    color: var(--textColor);
+    color: var(--threeColor);
     padding: 0.75rem 1.25rem;
 }
     .nav__link:nth-child(3n){
         color: var(--colorPrimary);
         font-weight: bold;
     }
-        .nav__link[data-active=true], .nav__link:hover{
-            color: var(--colorPrimary);
-            font-weight: bold;
-            border-top: 1rem solid var(--colorPrimary);
-        }
+    .nav__link:active, .nav__link:hover{
+        color: var(--colorPrimary);
+        font-weight: bold;
+        border-top: 1rem solid var(--colorPrimary);
+    }
         .nav__link--header{
             display: none;
         }
-/* Form search */
+/*------------------------------------*\
+  #Search and Form
+\*------------------------------------*/
+
+/*---Search---*/
+
 .search__subheading{
     line-height: 2.5rem;
 }
 
+/*---Form---*/
 .form{
     margin: 1.5rem 0 2rem 0;
 }
@@ -115,8 +106,8 @@ header{
         border-radius: 0.5rem 0 0 0.5rem;
     }
     .form__input{
-        -moz-border-radius: 1px solid var(--backColor);
-        -webkit-border-radius: 1px solid var(--backColor);
+        /*-moz-border-radius: 1px solid var(--backColor);
+        -webkit-border-radius: 1px solid var(--backColor);*/
         border: 1px solid var(--backColor);
         padding: 1rem;
     }
@@ -127,32 +118,30 @@ header{
         background-color: var(--colorPrimary);
         border-color: var(--colorPrimary);
         border-radius: 0 0.5rem 0.5rem 0;
-        color: var(--secondColorText);
+        color: var(--fourColor);
         font-weight: bold;
         cursor: pointer;
     }
-
-/* Form Favory */
-.form__filters {
-    align-items: center;
-}
-    .form__filters--text{
-        font-weight: bold;
-        margin: 0 1.5rem 0 0;
+    .form__filters {
+        align-items: center;
     }
-    .form__filters--btn{
-        margin: 0.5rem 1rem;
-    }
-    
-    .form__filters--icon{
-        color: var(--colorPrimary);
-        background-color: var(--colorSecondary);
-        padding: 1rem;
-        border-radius: 100%;
-        position: relative;
-        right: 0.5vh;
-        transition: all 400ms ease;
-    }
+        .form__filters--text{
+            font-weight: bold;
+            margin: 0 1.5rem 0 0;
+        }
+        .form__filters--btn{
+            margin: 0.5rem 1rem;
+        }
+        
+        .form__filters--icon{
+            color: var(--colorPrimary);
+            background-color: var(--colorSecondary);
+            padding: 1rem;
+            border-radius: 100%;
+            position: relative;
+            right: 0.5vh;
+            transition: all 400ms ease;
+        }
         .form__filters--label{
             border: 0.25rem solid var(--backColor);
             border-radius: 1.5rem;
@@ -203,14 +192,18 @@ header{
     border: 0.15rem solid var(--backColor);
     border-radius: 100%;
 }
-
-/* ACCOMODATION */
-
+/*------------------------------------*\
+  #Accomodation
+\*------------------------------------*/
 .accommodation{
     background-color: var(--backColor);
     padding: 2.5rem;
+    margin: 1rem 0;
     border-radius: 2rem;
 }
+    .accommodation__grid{
+        margin: 0 0 2rem 0;
+    }
     .accommodation__heading{
         padding: 0 0 1.5rem 0;
     }
@@ -220,8 +213,8 @@ header{
         padding: 0.5rem;
         margin: 1rem;
         border-radius: 1rem;
-        background-color: var(--secondColorText);
-        box-shadow: 6px 6px 10px var(--textColor);
+        background-color: var(--fourColor);
+        box-shadow: 6px 6px 10px var(--shadow);
     }
         .accommodation__card--figure > img{
             width: 100%;
@@ -231,7 +224,7 @@ header{
         }
         figcaption{
             line-height: 1.5rem;
-            color: var(--textColor);
+            color: var(--threeColor);
         }
         figcaption > i{
             color: var(--backColor);
@@ -240,10 +233,12 @@ header{
             color: var(--colorPrimary);
         }
     .accommodation__link{
-        color: var(--textColor);
+        color: var(--threeColor);
         font-weight: bold;
     }
-/* POPULAR */
+/*------------------------------------*\
+  #Popular
+\*------------------------------------*/
 .popular{
     background-color: var(--backColor);
     padding: 2.5rem;
@@ -262,8 +257,8 @@ header{
         padding: 0.5rem;
         margin: 1rem;
         border-radius: 1rem;
-        background-color: var(--secondColorText);
-        box-shadow: 6px 6px 10px var(--textColor);
+        background-color: var(--fourColor);
+        box-shadow: 6px 6px 10px var(--shadow);
     }
     .popular__card{
         display: flex;
@@ -283,8 +278,9 @@ header{
         .popular__card--color{
             color: var(--colorPrimary);
         }
-/* ACTIVITIES */
-
+/*------------------------------------*\
+  #Activities
+\*------------------------------------*/
 .activities__heading{
     padding: 1.75rem 0;
 }
@@ -300,15 +296,14 @@ header{
 }
 @media screen and (max-width: 720px){
     .activities__grid{
-        display: flex;
-        flex-direction: column;
+        display: grid;
     }
     .activities__card{
         margin: 1.5rem 0;
     }
 }
 .activities__card{
-    box-shadow: 6px 6px 10px var(--textColor);
+    box-shadow: 6px 6px 10px var(--shadow);
     display: block;
     border-radius: 1rem;    
 }
@@ -323,6 +318,7 @@ header{
     width: 100%;
     object-fit: cover;
     height: fit-content;
+    border-radius: 1rem 1rem 0 0;
 }
 .card-one > figure >img{
     height: 39vh;
@@ -347,19 +343,20 @@ header{
     flex-direction: column;
     justify-content: space-between;
 }
-/* FOOTER */
-
+/*------------------------------------*\
+  #Footer
+\*------------------------------------*/
 footer{
     background-color: var(--backColor);
     padding: 3rem 0rem 0rem 0rem;
 }
-footer > ul{
-    padding: 0 8rem 0 0;
-}
-.footer__list--link{
-    color: var(--textColor);
-    line-height: 1.5rem;
-}
-.footer__list--heading{
-    padding: 0 0 1rem 0;
-}
+    footer > ul{
+        padding: 0 8rem 0 0;
+    }
+    .footer__list--link{
+        color: var(--threeColor);
+        line-height: 1.5rem;
+    }
+    .footer__list--heading{
+        padding: 0 0 1rem 0;
+    }

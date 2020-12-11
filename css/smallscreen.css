@@ -27,8 +27,9 @@
     --colorPrimary: #0065fc;
     --colorSecondary: #DEEBFF;
     --backColor: #F2F2F2;
-    --textColor: #1D1C1C;
-    --secondColorText: #fff;
+    --threeColor: #1D1C1C;
+    --fourColor: #fff;
+    --shadow: #1D1C1C30;
   }
 
 /* fonts */
@@ -75,7 +76,7 @@ nav{
     font-weight: bold;
 }
 .nav__link{
-    color: var(--textColor);
+    color: var(--threeColor);
     padding: 0.75rem 1.25rem;
 }
     .nav__link:nth-child(3n){
@@ -117,7 +118,7 @@ nav{
             border-radius: 0.5rem;
             position: relative;
             right: 1rem;
-            color: var(--secondColorText);
+            color: var(--fourColor);
             font-weight: bold;
             cursor: pointer;
         }
@@ -204,8 +205,8 @@ nav{
     margin: 1rem 0;
     padding: 0.5rem;
     border-radius: 1rem;
-    background-color: var(--secondColorText);
-    box-shadow: 6px 6px 10px var(--textColor);
+    background-color: var(--fourColor);
+    box-shadow: 6px 6px 10px var(--shadow);
 }
     .accommodation__card--figure > img{
         width: 100%;
@@ -215,7 +216,7 @@ nav{
     }
     figcaption{
         line-height: 1.5rem;
-        color: var(--textColor);
+        color: var(--threeColor);
     }
     figcaption > i{
         color: var(--backColor);
@@ -224,7 +225,7 @@ nav{
         color: var(--colorPrimary);
     }
 .accommodation__link{
-    color: var(--textColor);
+    color: var(--threeColor);
     font-weight: bold;
 }
 /* POPULAR */
@@ -241,8 +242,8 @@ nav{
     padding: 0.5rem;
     margin: 1rem;
     border-radius: 1rem;
-    background-color: var(--secondColorText);
-    box-shadow: 4px 4px 5px var(--textColor);
+    background-color: var(--fourColor);
+    box-shadow: 4px 4px 5px var(--shadow);
 }
 .popular__card{
     display: flex;
@@ -268,7 +269,7 @@ nav{
     padding: 1.75rem 0;
 }
 .activities__card{
-    box-shadow: 6px 6px 10px var(--textColor);
+    box-shadow: 6px 6px 10px var(--shadow);
     display: block;
     border-radius: 1rem;
     margin: 1.5rem 0;
@@ -284,6 +285,7 @@ nav{
     width: 100%;
     object-fit: cover;
     height: fit-content;
+    border-radius: 1rem 1rem 0 0;
 }
 .card-one > figure >img{
     height: 39vh;
@@ -313,7 +315,7 @@ footer > ul{
     padding: 1rem;
 }
 .footer__list--link{
-    color: var(--textColor);
+    color: var(--threeColor);
     line-height: 1.5rem;
 }
 .footer__list--heading{

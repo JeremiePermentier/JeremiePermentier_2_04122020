@@ -28,7 +28,8 @@
     --colorSecondary: #DEEBFF;
     --backColor: #F2F2F2;
     --colorThree: #1D1C1C;
-    --secondColorText: #fff;
+    --fourColor: #fff;
+    --shadow: #1D1C1C30;
   }
 
 /* fonts */
@@ -62,7 +63,7 @@ header, section, ul{
 header{
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 3rem 0;
+    padding: 2rem 0 3rem 0;
 }
 .accommodation__grid{
     flex-wrap: wrap;
@@ -88,13 +89,13 @@ header{
 
 .nav__link{
     color: var(--colorThree);
-    padding: 0.75rem 1.25rem;
+    padding: 2.75rem 1.25rem;
 }
     .nav__link:nth-child(3n){
         color: var(--colorPrimary);
         font-weight: bold;
     }
-        .nav__link[data-active=true], .nav__link:hover{
+        .nav__link:active, .nav__link:hover{
             color: var(--colorPrimary);
             font-weight: bold;
             border-top: 1rem solid var(--colorPrimary);
@@ -117,8 +118,8 @@ header{
         border-radius: 0.5rem 0 0 0.5rem;
     }
     .form__input{
-        -moz-border-radius: 1px solid var(--backColor);
-        -webkit-border-radius: 1px solid var(--backColor);
+        /*-moz-border-radius: 1px solid var(--backColor);
+        -webkit-border-radius: 1px solid var(--backColor);*/
         border: 1px solid var(--backColor);
         padding: 1rem;
     }
@@ -129,7 +130,7 @@ header{
         background-color: var(--colorPrimary);
         border-color: var(--colorPrimary);
         border-radius: 0 0.5rem 0.5rem 0;
-        color: var(--secondColorText);
+        color: var(--fourColor);
         font-weight: bold;
         cursor: pointer;
     }
@@ -222,8 +223,8 @@ header{
         padding: 0.5rem;
         margin: 1rem;
         border-radius: 1rem;
-        background-color: var(--secondColorText);
-        box-shadow: 6px 6px 10px var(--colorThree);
+        background-color: var(--fourColor);
+        box-shadow: 6px 6px 10px var(--shadow);
     }
         .accommodation__card--figure > img{
             width: 100%;
@@ -259,8 +260,8 @@ header{
         padding: 0.5rem;
         margin: 1rem;
         border-radius: 1rem;
-        background-color: var(--secondColorText);
-        box-shadow: 6px 6px 10px var(--colorThree);
+        background-color: var(--fourColor);
+        box-shadow: 6px 6px 10px var(--shadow);
     }
     .popular__card{
         display: flex;
@@ -291,7 +292,7 @@ header{
     column-gap: 3rem;
 }
 .activities__card{
-    box-shadow: 6px 6px 10px var(--colorThree);
+    box-shadow: 6px 6px 10px var(--shadow);
     display: block;
     border-radius: 1rem;
     
@@ -307,6 +308,7 @@ header{
     width: 100%;
     object-fit: cover;
     height: fit-content;
+    border-radius: 1rem 1rem 0 0;
 }
 .card-one > figure >img{
     height: 39vh;
