@@ -36,6 +36,13 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
+/*------------------------------------*\
+  #BASE
+\*------------------------------------*/
+
+/*---Page-Head---*/
+
+
 
 /*------------------------------------*\
   #OBJECTS
@@ -53,7 +60,7 @@ body{
     justify-content: space-around;
 }
 .search, .accommodation, .activities{
-    padding: 0 1rem;
+    padding: 1rem 1rem;
 }
 .layout{
     display: flex;
@@ -97,6 +104,8 @@ nav{
     margin: 1.5rem 0 2rem 0;
 }
     .form__icon{
+        position: relative;
+        left: 0.5rem;
         background-color: var(--backColor);
         padding: 1rem;
         border: 1px solid var(--backColor);
@@ -108,6 +117,11 @@ nav{
     }
         .form__input--search{
             width: 100%;
+        }
+        .form__input--search::placeholder{
+            font-weight: bold;
+            font-size: 1rem;
+            color: var(--threeColor);
         }
         .form__input--btn{
             display: none;
@@ -207,6 +221,11 @@ nav{
     border-radius: 1rem;
     background-color: var(--fourColor);
     box-shadow: 6px 6px 10px var(--shadow);
+    transition: box-shadow 400ms ease, transform 400ms ease;
+}
+.accommodation__card:hover{
+    box-shadow: 4px 4px 8px var(--shadow);
+    transform: scale(1.05);
 }
     .accommodation__card--figure > img{
         width: 100%;
@@ -237,16 +256,21 @@ nav{
 .popular__heading{
     padding: 2rem 0.5rem 1rem 0.5rem;
     margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 .popular__card{
+    display: flex;
     padding: 0.5rem;
     margin: 1rem;
     border-radius: 1rem;
     background-color: var(--fourColor);
     box-shadow: 4px 4px 5px var(--shadow);
+    transition: box-shadow 400ms ease, transform 400ms ease;
 }
-.popular__card{
-    display: flex;
+.popular__card:hover{
+    box-shadow: 4px 4px 8px var(--shadow);
+    transform: scale(1.05);
 }
     .popular__card > figure{
         display: inherit;
@@ -273,6 +297,11 @@ nav{
     display: block;
     border-radius: 1rem;
     margin: 1.5rem 0;
+    transition: box-shadow 400ms ease, transform 400ms ease;
+}
+.activities__card:hover{
+    box-shadow: 4px 4px 8px var(--shadow);
+    transform: scale(1.05);
 }
 .activities__card > figure{
     height: fit-content;

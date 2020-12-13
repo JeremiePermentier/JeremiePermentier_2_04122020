@@ -31,6 +31,13 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 /*------------------------------------*\
+  #BASE
+\*------------------------------------*/
+
+/*---Page-Head---*/
+
+
+/*------------------------------------*\
   #Flex-box
 \*------------------------------------*/
 .form, .form__filters, header, .accommodation__grid, footer, .laytout{
@@ -106,10 +113,13 @@ header{
         border-radius: 0.5rem 0 0 0.5rem;
     }
     .form__input{
-        /*-moz-border-radius: 1px solid var(--backColor);
-        -webkit-border-radius: 1px solid var(--backColor);*/
         border: 1px solid var(--backColor);
         padding: 1rem;
+    }
+    .form__input--search::placeholder{
+        font-weight: bold;
+        font-size: 1rem;
+        color: var(--threeColor);
     }
     .form__input--mobile{
         display: none;
@@ -137,6 +147,8 @@ header{
             color: var(--colorPrimary);
             background-color: var(--colorSecondary);
             padding: 1rem;
+            width: 1rem;
+            text-align: center;
             border-radius: 100%;
             position: relative;
             right: 0.5vh;
@@ -215,6 +227,11 @@ header{
         border-radius: 1rem;
         background-color: var(--fourColor);
         box-shadow: 6px 6px 10px var(--shadow);
+        transition: box-shadow 400ms ease, transform 400ms ease;
+    }
+    .accommodation__card:hover{
+        box-shadow: 4px 4px 8px var(--shadow);
+        transform: scale(1.05);
     }
         .accommodation__card--figure > img{
             width: 100%;
@@ -251,17 +268,22 @@ header{
 }
     .popular__heading{
         padding: 0 0 1.5rem 0;
+        display: flex;
+        justify-content: space-between;
     }
     .popular__card{
+        display: flex;
         width: 29rem;
         padding: 0.5rem;
         margin: 1rem;
         border-radius: 1rem;
         background-color: var(--fourColor);
         box-shadow: 6px 6px 10px var(--shadow);
+        transition: box-shadow 400ms ease, transform 400ms ease;
     }
-    .popular__card{
-        display: flex;
+    .popular__card:hover{
+        box-shadow: 4px 4px 8px var(--shadow);
+        transform: scale(1.05);
     }
         .popular__card > figure{
             display: inherit;
@@ -305,7 +327,12 @@ header{
 .activities__card{
     box-shadow: 6px 6px 10px var(--shadow);
     display: block;
-    border-radius: 1rem;    
+    border-radius: 1rem; 
+    transition: box-shadow 400ms ease, transform 400ms ease;   
+}
+.activities__card:hover{
+    box-shadow: 4px 4px 8px var(--shadow);
+    transform: scale(1.05);
 }
 .activities__card > figure{
     height: fit-content;
