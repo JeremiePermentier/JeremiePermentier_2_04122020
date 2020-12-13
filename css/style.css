@@ -10,10 +10,16 @@
 * OBJECTS
 * Wrappers..............Wrapping and constraining elements.
 * 
-* COMPONENTS
-* Page-head.............The main page header.
-* Page-foot.............The main page footer.
-* Buttons...............Button elements.
+* SECTION
+* 
+* nav
+* form-search
+* form-favory
+* accomodation
+* popular
+* activities
+* footer
+* 
 */
 
 /*------------------------------------*\
@@ -82,10 +88,10 @@ header{
     justify-content: flex-start;
 }
 /*------------------------------------*\
-  #COMPONENTS
+  #section
 \*------------------------------------*/
 
-/*---Page-Head---*/
+/*---nav---*/
 
 .nav__link{
     color: var(--colorThree);
@@ -108,7 +114,7 @@ header{
         .nav__link--header{
             display: none;
         }
-/* Form search */
+/*---Form-search---*/
 .search__subheading{
     line-height: 2.5rem;
 }
@@ -143,7 +149,7 @@ header{
         cursor: pointer;
     }
 
-/* Form Favory */
+/*---form-favory---*/
 .form__filters {
     align-items: center;
 }
@@ -217,7 +223,7 @@ header{
     border-radius: 100%;
 }
 
-/* ACCOMODATION */
+/*---accomodation---*/
 
 .accommodation{
     background-color: var(--backColor);
@@ -225,7 +231,7 @@ header{
     border-radius: 2rem;
 }
     .accommodation__heading{
-        padding: 0 0 1.5rem 0;
+        padding: 0 0 1.5rem 1.5rem;
     }
     .accommodation__card{
         display: block;
@@ -239,7 +245,7 @@ header{
     }
     .accommodation__card:hover{
         box-shadow: 4px 4px 8px var(--shadow);
-        transform: scale(1.15);
+        transform: scale(1.05);
     }
         .accommodation__card--figure > img{
             width: 100%;
@@ -260,15 +266,16 @@ header{
     .accommodation__link{
         color: var(--colorThree);
         font-weight: bold;
+        padding: 0 0 0 1.5rem;
     }
-/* POPULAR */
+/*---popular---*/
 .popular{
     background-color: var(--backColor);
     padding: 2.5rem;
     border-radius: 2rem;
 }
     .popular__heading{
-        padding: 0 0 1.5rem 0;
+        padding: 0 1rem 1.5rem 1rem;
         display: flex;
         justify-content: space-between;
     }
@@ -303,7 +310,7 @@ header{
         .popular__card--color{
             color: var(--colorPrimary);
         }
-/* ACTIVITIES */
+/*---activities---*/
 
 .activities__heading{
     padding: 1.75rem 0;
@@ -360,7 +367,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
 }
-/* FOOTER */
+/*---footer---*/
 
 footer{
     background-color: var(--backColor);

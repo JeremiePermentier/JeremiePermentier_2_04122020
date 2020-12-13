@@ -10,10 +10,16 @@
 * OBJECTS
 * Wrappers..............Wrapping and constraining elements.
 * 
-* COMPONENTS
-* Page-head.............The main page header.
-* Page-foot.............The main page footer.
-* Buttons...............Button elements.
+* SECTION
+* 
+* nav
+* form-search
+* form-favory
+* accomodation
+* popular
+* activities
+* footer
+* 
 */
 
 /*------------------------------------*\
@@ -67,10 +73,10 @@ body{
     flex-direction: column-reverse;
 }
 /*------------------------------------*\
-  #COMPONENTS
+  #section
 \*------------------------------------*/
 
-/*---Page-Head---*/
+/*---nav---*/
 
 nav{
     border-bottom: 0.15rem solid var(--backColor);
@@ -95,7 +101,7 @@ nav{
             font-weight: bold;
         }
 
-/* Form search */
+/*---form-search---*/
 .search__subheading{
     line-height: 2.5rem;
 }
@@ -136,7 +142,7 @@ nav{
             font-weight: bold;
             cursor: pointer;
         }
-/* Form Favory */
+/*---form-favory---*/
 .form__filters {
     align-items: center;
     display: flex;
@@ -209,7 +215,7 @@ nav{
     border: 0.15rem solid var(--backColor);
     border-radius: 100%;
 }
-/* ACCOMODATION */
+/*---accommodation---*/
 
 .accommodation__heading{
     padding: 0 0 1.5rem 0;
@@ -247,7 +253,7 @@ nav{
     color: var(--threeColor);
     font-weight: bold;
 }
-/* POPULAR */
+/*---popular---*/
 .popular{
     background-color: var(--backColor);
     padding: 0 0 1rem 0;
@@ -287,7 +293,7 @@ nav{
     .popular__card--color{
         color: var(--colorPrimary);
     }
-    /* ACTIVITIES */
+/*---activities---*/
 
 .activities__heading{
     padding: 1.75rem 0;
@@ -316,7 +322,7 @@ nav{
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
-/* FOOTER */
+/*---footer---*/
 
 footer{
     background-color: var(--backColor);

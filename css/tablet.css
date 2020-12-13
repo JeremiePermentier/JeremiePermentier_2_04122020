@@ -4,11 +4,22 @@
 * SETTINGS
 * Global................Variables and fonts.
 *
-* Header
-* Nav
-* MAIN
-***
+* BASE
+* Headings..............H1 - H6 Styles.
 *
+* OBJECTS
+* Wrappers..............Wrapping and constraining elements.
+* 
+* SECTION
+* 
+* nav
+* form-search
+* form-favory
+* accomodation
+* popular
+* activities
+* footer
+* 
 */
 
 /*------------------------------------*\
@@ -74,8 +85,10 @@ header{
     padding: 0 0 3rem 0;
 }
 /*------------------------------------*\
-  #Nav
+  #section
 \*------------------------------------*/
+
+/*---nav---*/
 .nav__link{
     color: var(--threeColor);
     padding: 0.75rem 1.25rem;
@@ -96,13 +109,11 @@ header{
   #Search and Form
 \*------------------------------------*/
 
-/*---Search---*/
+/*---Form-search---*/
 
 .search__subheading{
     line-height: 2.5rem;
 }
-
-/*---Form---*/
 .form{
     margin: 1.5rem 0 2rem 0;
 }
@@ -132,67 +143,70 @@ header{
         font-weight: bold;
         cursor: pointer;
     }
-    .form__filters {
-        align-items: center;
+
+/*---form-favory---*/
+
+.form__filters {
+    align-items: center;
+}
+    .form__filters--text{
+        font-weight: bold;
+        margin: 0 1.5rem 0 0;
     }
-        .form__filters--text{
-            font-weight: bold;
-            margin: 0 1.5rem 0 0;
-        }
-        .form__filters--btn{
-            margin: 0.5rem 1rem;
-        }
-        
-        .form__filters--icon{
-            color: var(--colorPrimary);
-            background-color: var(--colorSecondary);
-            padding: 1rem;
-            width: 1rem;
-            text-align: center;
-            border-radius: 100%;
-            position: relative;
-            right: 0.5vh;
-            transition: all 400ms ease;
-        }
-        .form__filters--label{
-            border: 0.25rem solid var(--backColor);
-            border-radius: 1.5rem;
-            padding: 0.75rem 0.5rem 0.75rem 0rem;
-            font-weight: bold;
-            transition: all 400ms ease;
-        }
-        .form__filters--label:hover{
-            border-color: var(--colorPrimary);
-            cursor: pointer;
-        }
-        .form__filters--label:hover > i{
-            background-color: var(--colorPrimary);
-            color: var(--colorSecondary);
-        }
-        #economy:checked ~ .form__filters--label, 
-        #family:checked ~ .form__filters--label, 
-        #romantique:checked ~ .form__filters--label,
-        #animals:checked ~ .form__filters--label{
-            border-color: var(--colorPrimary);
-        }
-        #economy:checked ~ .form__filters--label, 
-        #family:checked ~ .form__filters--label, 
-        #romantique:checked ~ .form__filters--label,
-        #animals:checked ~ .form__filters--label{
-            background-color: var(--colorPrimary);
-            color: var(--colorSecondary);
-            transform-origin: left;
-        }
-        #economy:checked ~ .form__filters--label > i,
-        #family:checked ~ .form__filters--label > i,
-        #romantique:checked ~ .form__filters--label > i,
-        #animals:checked ~ .form__filters--label > i{
-            background-color: var(--colorPrimary);
-            color: var(--colorSecondary);
-        }
-        .form__filters--checkbox{
-            display: none;
-        }
+    .form__filters--btn{
+        margin: 0.5rem 1rem;
+    }
+    
+    .form__filters--icon{
+        color: var(--colorPrimary);
+        background-color: var(--colorSecondary);
+        padding: 1rem;
+        width: 1rem;
+        text-align: center;
+        border-radius: 100%;
+        position: relative;
+        right: 0.5vh;
+        transition: all 400ms ease;
+    }
+    .form__filters--label{
+        border: 0.25rem solid var(--backColor);
+        border-radius: 1.5rem;
+        padding: 0.75rem 0.5rem 0.75rem 0rem;
+        font-weight: bold;
+        transition: all 400ms ease;
+    }
+    .form__filters--label:hover{
+        border-color: var(--colorPrimary);
+        cursor: pointer;
+    }
+    .form__filters--label:hover > i{
+        background-color: var(--colorPrimary);
+        color: var(--colorSecondary);
+    }
+    #economy:checked ~ .form__filters--label, 
+    #family:checked ~ .form__filters--label, 
+    #romantique:checked ~ .form__filters--label,
+    #animals:checked ~ .form__filters--label{
+        border-color: var(--colorPrimary);
+    }
+    #economy:checked ~ .form__filters--label, 
+    #family:checked ~ .form__filters--label, 
+    #romantique:checked ~ .form__filters--label,
+    #animals:checked ~ .form__filters--label{
+        background-color: var(--colorPrimary);
+        color: var(--colorSecondary);
+        transform-origin: left;
+    }
+    #economy:checked ~ .form__filters--label > i,
+    #family:checked ~ .form__filters--label > i,
+    #romantique:checked ~ .form__filters--label > i,
+    #animals:checked ~ .form__filters--label > i{
+        background-color: var(--colorPrimary);
+        color: var(--colorSecondary);
+    }
+    .form__filters--checkbox{
+        display: none;
+    }
 
 .form__info{
     margin: 1rem 0;
@@ -204,9 +218,7 @@ header{
     border: 0.15rem solid var(--backColor);
     border-radius: 100%;
 }
-/*------------------------------------*\
-  #Accomodation
-\*------------------------------------*/
+/*---accomodation---*/
 .accommodation{
     background-color: var(--backColor);
     padding: 2.5rem;
@@ -253,9 +265,7 @@ header{
         color: var(--threeColor);
         font-weight: bold;
     }
-/*------------------------------------*\
-  #Popular
-\*------------------------------------*/
+/*---popular---*/
 .popular{
     background-color: var(--backColor);
     padding: 2.5rem;
@@ -300,9 +310,7 @@ header{
         .popular__card--color{
             color: var(--colorPrimary);
         }
-/*------------------------------------*\
-  #Activities
-\*------------------------------------*/
+/*---activities---*/
 .activities__heading{
     padding: 1.75rem 0;
 }
@@ -370,9 +378,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
 }
-/*------------------------------------*\
-  #Footer
-\*------------------------------------*/
+/*---footer---*/
 footer{
     background-color: var(--backColor);
     padding: 3rem 0rem 0rem 0rem;
