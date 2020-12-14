@@ -160,6 +160,8 @@ nav{
         color: var(--colorPrimary);
         background-color: var(--colorSecondary);
         padding: 1rem;
+        width: 1rem;
+        text-align:center;
         border-radius: 100%;
         position: relative;
         right: 0.5vh;
