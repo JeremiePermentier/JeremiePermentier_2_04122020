@@ -51,7 +51,7 @@ body{
 /*------------------------------------*\
   #Flex-box
 \*------------------------------------*/
-.form, .form__filters, header, .accommodation__grid, footer, .laytout{
+.form, .form__filters, header, .accommodation__grid, footer, .layout{
     display: flex;
 }
 .form__filters, header, footer, .accommodation__grid{
@@ -221,7 +221,7 @@ header{
 /*---accomodation---*/
 .accommodation{
     background-color: var(--backColor);
-    padding: 2.5rem;
+    padding:  2rem 0rem;
     margin: 1rem 0;
     border-radius: 2rem;
 }
@@ -229,7 +229,7 @@ header{
         margin: 0 0 2rem 0;
     }
     .accommodation__heading{
-        padding: 0 0 1.5rem 0;
+        padding: 1.5rem 2.5rem;
     }
     .accommodation__card{
         display: block;
@@ -264,11 +264,12 @@ header{
     .accommodation__link{
         color: var(--threeColor);
         font-weight: bold;
+        padding: 0 0 0rem 2.5rem;
     }
 /*---popular---*/
 .popular{
     background-color: var(--backColor);
-    padding: 2.5rem;
+    padding: 2rem 0;
     border-radius: 2rem;
 }
 .popular__container{
@@ -276,14 +277,14 @@ header{
     flex-wrap: wrap;
     justify-content: center;
 }
-    .popular__heading{
-        padding: 0 0 1.5rem 0;
+    .popular__heading {
+        padding: 1.5rem 2.5rem;
         display: flex;
         justify-content: space-between;
     }
     .popular__card{
         display: flex;
-        width: 29rem;
+        width: 20rem;
         padding: 0.5rem;
         margin: 1rem;
         border-radius: 1rem;
