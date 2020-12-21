@@ -104,8 +104,7 @@ body{
         position: relative;
         left: 0.5rem;
         background-color: #F2F2F2;
-        padding: 1rem;
-        border: 1px solid #F2F2F2;
+        padding: 1rem 1.25rem;
         border-radius: 0.5rem 0 0 0.5rem;
     }
     .form__input{
@@ -125,7 +124,6 @@ body{
         }
         .form__input--mobile{
             background-color: #0065fc;
-            border-color: #0065fc;
             border-radius: 0.5rem;
             position: relative;
             right: 1rem;
@@ -170,27 +168,6 @@ body{
             cursor: pointer;
         }
         .form__filters--label:hover > i{
-            background-color: #0065fc;
-            color: #DEEBFF;
-        }
-        #economy:checked ~ .form__filters--label, 
-        #family:checked ~ .form__filters--label, 
-        #romantique:checked ~ .form__filters--label,
-        #animals:checked ~ .form__filters--label{
-            border-color: #0065fc;
-        }
-        #economy:checked ~ .form__filters--label, 
-        #family:checked ~ .form__filters--label, 
-        #romantique:checked ~ .form__filters--label,
-        #animals:checked ~ .form__filters--label{
-            background-color: #0065fc;
-            color: #DEEBFF;
-            transform-origin: left;
-        }
-        #economy:checked ~ .form__filters--label > i,
-        #family:checked ~ .form__filters--label > i,
-        #romantique:checked ~ .form__filters--label > i,
-        #animals:checked ~ .form__filters--label > i{
             background-color: #0065fc;
             color: #DEEBFF;
         }
