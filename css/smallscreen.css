@@ -93,6 +93,9 @@ body{
         }
 
 /*---form-search---*/
+.search__heading{
+    font-weight: bold;
+}
 .search__subheading{
     line-height: 2.5rem;
 }
@@ -139,10 +142,10 @@ body{
 }
     .form__filters--text{
         font-weight: bold;
-        margin: 0 1.5rem 0 0;
+        margin: 0 9.5rem 0 0;
     }
     .form__filters--btn{
-        margin: 0.5rem 1rem;
+        margin: 0.5rem 0.5rem;
     }
     
     .form__filters--icon{
@@ -159,7 +162,7 @@ body{
         .form__filters--label{
             border: 0.15rem solid #F2F2F2;
             border-radius: 1.5rem;
-            padding: 0.75rem 0.5rem 0.75rem 0rem;
+            padding: 0.75rem 1.25rem 0.75rem 0rem;
             font-weight: bold;
             transition: all 400ms ease;
         }
@@ -189,6 +192,7 @@ body{
 
 .accommodation__heading{
     padding: 0 0 1.5rem 0;
+    font-weight: bold;
 }
 .accommodation__card{
     display: block;
@@ -235,6 +239,7 @@ body{
     margin: 0.5rem;
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 }
 .popular__card{
     display: flex;
@@ -268,6 +273,7 @@ body{
 
 .activities__heading{
     padding: 1.75rem 0;
+    font-weight: bold;
 }
 .activities__card{
     box-shadow: 6px 6px 10px #1D1C1C30;

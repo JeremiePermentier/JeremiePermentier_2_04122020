@@ -102,6 +102,9 @@ header{
 \*------------------------------------*/
 
 /*---Form-search---*/
+.search__heading{
+    font-weight: bold;
+}
 
 .search__subheading{
     line-height: 2.5rem;
@@ -162,7 +165,7 @@ header{
     .form__filters--label{
         border: 0.15rem solid #F2F2F2;
         border-radius: 1.5rem;
-        padding: 0.75rem 0.5rem 0.75rem 0rem;
+        padding: 0.75rem 1.25rem 0.75rem 0rem;
         font-weight: bold;
         transition: all 400ms ease;
     }
@@ -197,9 +200,11 @@ header{
 }
     .accommodation__grid{
         margin: 0 0 2rem 0;
+        padding: 0rem 0rem 1.5rem 0;
     }
     .accommodation__heading{
         padding: 1.5rem 2.5rem;
+        font-weight: bold;
     }
     .accommodation__card{
         display: block;
@@ -252,6 +257,7 @@ header{
         padding: 1.5rem 2.5rem;
         display: flex;
         justify-content: space-between;
+        font-weight: bold;
     }
     .popular__card{
         display: flex;
@@ -285,6 +291,7 @@ header{
 /*---activities---*/
 .activities__heading{
     padding: 1.75rem 0;
+    font-weight: bold;
 }
 .activities__grid{
     display: grid;
