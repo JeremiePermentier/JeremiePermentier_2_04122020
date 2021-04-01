@@ -29,6 +29,8 @@
 /* fonts */
 body{
     font-family: 'Raleway', sans-serif;
+    max-width: 1920px;
+    margin: auto;
 }
 
 /*------------------------------------*\
