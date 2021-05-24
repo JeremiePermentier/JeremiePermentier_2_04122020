@@ -282,12 +282,9 @@ header{
             border-radius: 0.75rem 0 0 0.75rem ;
             object-fit: cover;
         }
-        .popular__card > figure > figcaption{
-            padding: 1rem 1rem 0.5rem 1rem;
-        }
         .popular__card--color{
             color: #0065fc;
-            margin: 2rem 0 0 0;
+            margin: 3rem 0 0 0;
         }
 /*---activities---*/
 .activities__heading{
