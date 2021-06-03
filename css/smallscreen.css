@@ -116,6 +116,7 @@ body{
     }
         .form__input--search{
             -webkit-appearance: none;
+            appearance: none;
             width: 100%;
         }
         .form__input--search::placeholder{
