@@ -115,6 +115,7 @@ body{
         padding: 1rem;
     }
         .form__input--search{
+            -webkit-appearance: none;
             width: 100%;
         }
         .form__input--search::placeholder{

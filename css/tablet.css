@@ -119,6 +119,7 @@ header{
     }
     .form__input{
         border: 1px solid #F2F2F2;
+        -webkit-appearance: none;
         padding: 1rem;
     }
     .form__input--search::placeholder{
